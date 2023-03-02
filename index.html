@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sisfodikpus</title>
-    <meta name="description" content="NFT Marketplace Template">
+    <meta name="description" content="Sisfodikpus">
     <meta name="theme-color" content="#741ff5">
 
     <!-- preload head styles -->
@@ -181,11 +181,62 @@
                                 <ul class="uk-navbar-nav dark:uk-text-gray-10 uk-visible@m"
                                     data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80" data-uk-navbar-bound>
                                     <li><a href="#">Beranda</a></li>
-                                    <li><a href="#">Tentang Kami</a></li>
-                                    <li><a href="#">Prodi</a></li>
-                                    <li><a href="#">Roadmap</a></li>
-                                    <li><a href="#">Team</a></li>
                                 </ul>
+                                <div class="uk-inline">
+                                    <button class="uk-button uk-button-default" type="button">Tentang Kami</button>
+                                    <div class="uk-dropdown-large" uk-dropdown>
+                                        <ul class="uk-nav uk-dropdown-nav">
+                                            <li class="uk-nav-header">Info Sisfodikpus</li>
+                                            <li><a href="#">Sejarah</a></li>
+                                            <li><a href="#">Tujuan</a></li>
+                                            <li><a href="#">Visi & Misi</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button class="uk-button uk-button-default" type="button">Fakultas Teknik</button>
+                                <div class="uk-width-large" uk-dropdown>
+                                    <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>
+                                        <div>
+                                            <ul class="uk-nav uk-dropdown-nav">
+                                                <li class="uk-nav-header">Fakultas Informatika</li>
+                                                <li><a href="#">S1 Teknik Informatika</a></li>
+                                                <li><a href="#">S1 Teknologi Informasi</a></li>
+                                                <li><a href="#">S1 Rekayasa Perangkat Lunak</a></li>
+                                                <li class="uk-nav-header">Fakultas Elektro</li>
+                                                <li><a href="#">S1 Teknik Telekomunikasi</a></li>
+                                                <li><a href="#">S1 Teknik Elektro</a></li>
+                                                <li><a href="#">S1 Teknik Fisika</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="uk-nav uk-dropdown-nav">
+                                                <li class="uk-nav-header">Fakultas Teknik Elektro</li>
+                                                <li><a href="#">S1 Teknik Informatika</a></li>
+                                                <li><a href="#">S1 Teknologi Informasi</a></li>
+                                                <li><a href="#">S1 Rekayasa Perangkat Lunak</a></li>
+                                                <li class="uk-nav-header">Fakultas Teknik Elektro</li>
+                                                <li><a href="#">S1 Teknik Telekomunikasi</a></li>
+                                                <li><a href="#">S1 Teknik Elektro</a></li>
+                                                <li><a href="#">S1 Teknik Fisika</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-inline">
+                                    <button class="uk-button uk-button-default" type="button">Fakultas Terapan</button>
+                                    <div class="uk-dropdown-large" uk-dropdown>
+                                        <ul class="uk-nav uk-dropdown-nav">
+                                            <li class="uk-nav-header">Fakultas Informatika</li>
+                                            <li><a href="#">S1 Teknik Informatika</a></li>
+                                            <li><a href="#">S1 Teknologi Informasi</a></li>
+                                            <li><a href="#">S1 Rekayasa Perangkat Lunak</a></li>
+                                            <li class="uk-nav-header">Fakultas Elektro</li>
+                                            <li><a href="#">S1 Teknik Telekomunikasi</a></li>
+                                            <li><a href="#">S1 Teknik Elektro</a></li>
+                                            <li><a href="#">S1 Teknik Fisika</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                                 <div class="uk-navbar-item">
                                     <ul class="uk-subnav uk-subnav-small uk-visible@m">
                                         <li>
@@ -195,13 +246,6 @@
                                             <a href="#"><i class="uk-icon uk-icon-medium unicon-logo-twitter"></i></a>
                                         </li>
                                     </ul>
-
-                                    <!-- header: call to actions -->
-                                    <a href="#uni_connect_wallet"
-                                        class="uk-button uk-button-medium@m uk-button-default uk-button-outline uk-margin-left uk-visible@l"
-                                        data-uk-toggle="">
-                                        <span>DASHBOARD</span>
-                                    </a>
                                 </div>
 
                                 <div class="uk-navbar-item uk-hidden@m">
@@ -259,11 +303,10 @@
                                         data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 440;">
                                     <h2 class="uk-h2 uk-d3@m uk-margin-small uk-margin@m">Sistem Informasi
                                         Prodi Kampus</h2>
-                                    <p class="uk-text-xlarge uk-width-xlarge@m uk-text-muted">Lorem ipsum dolor sit amet
-                                        consectetur adipisicing elit.</p>
-                                    <a href="#"
+                                    <p class="uk-text-xlarge uk-width-xlarge@m uk-text-muted">Memperkenalkan fakultas pada mahasiswa atau calon mahasiswa baru.</p>
+                                    <a href="#uni_about"
                                         class="uk-button uk-button-medium@m uk-button-gradient uk-margin-small-top">
-                                        <span>Go To Dashboard</span>
+                                        <span>Sekilas Tentang Sisfodikpus</span>
                                         <i class="uk-icon-small unicon-arrow-right uk-text-bold"></i>
                                     </a>
                                 </div>
@@ -395,14 +438,11 @@
                                 class="uk-panel uk-card uk-card-small uk-padding-large-horizontal uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
                                 <div class="uk-grid uk-grid-medium@m" data-uk-grid="">
                                     <div class="uk-width-1-3 uk-width-1-4@m">
-                                        <img src="assets/images/icon-01.png" alt="Icon">
+                                        <img src="assets/images/icon/informatika.png" alt="Icon">
                                     </div>
                                     <div class="uk-panel uk-width-expand">
-                                        <h3 class="uk-h5 uk-h4@m">DemoTestingWeb</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas
-                                            commodi dolores molestias aut ducimus qui, mollitia voluptatibus obcaecati
-                                            exercitationem quis veniam pariatur vitae architecto nostrum quia corporis
-                                            odio totam?</p>
+                                        <h3 class="uk-h5 uk-h4@m">S1 Teknik Informatika</h3>
+                                        <p>Menuju program studi sarjana yang bereputasi nasional dan internasional dalam pendidikan, penelitian, dan pengabdian masyarakat yang inovatif di bidang Informatika, khususnya sistem cerdas</p>
                                     </div>
                                 </div>
                             </div>
@@ -412,14 +452,11 @@
                                 class="uk-panel uk-card uk-card-small uk-padding-large-horizontal uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
                                 <div class="uk-grid uk-grid-medium@m" data-uk-grid="">
                                     <div class="uk-width-1-3 uk-width-1-4@m">
-                                        <img src="assets/images/icon-01.png" alt="Icon">
+                                        <img src="assets/images/icon/elektro.png" alt="Icon">
                                     </div>
                                     <div class="uk-panel uk-width-expand">
-                                        <h3 class="uk-h5 uk-h4@m">DemoTestingWeb</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas
-                                            commodi dolores molestias aut ducimus qui, mollitia voluptatibus obcaecati
-                                            exercitationem quis veniam pariatur vitae architecto nostrum quia corporis
-                                            odio totam?</p>
+                                        <h3 class="uk-h5 uk-h4@m">S1 Teknik Elektro</h3>
+                                        <p>Menjadi program studi berstandar internasional yang berperan aktif dalam pengembangan pendidikan, riset, dan kewirausahaan serta menghasilkan sarjana di bidang Sistem Elektronika, Sistem Kendali, atau Sistem Tertanam</p>
                                     </div>
                                 </div>
                             </div>
@@ -429,14 +466,11 @@
                                 class="uk-panel uk-card uk-card-small uk-padding-large-horizontal uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
                                 <div class="uk-grid uk-grid-medium@m" data-uk-grid="">
                                     <div class="uk-width-1-3 uk-width-1-4@m">
-                                        <img src="assets/images/icon-01.png" alt="Icon">
+                                        <img src="assets/images/icon/manajemen.png" alt="Icon">
                                     </div>
                                     <div class="uk-panel uk-width-expand">
-                                        <h3 class="uk-h5 uk-h4@m">DemoTestingWeb</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas
-                                            commodi dolores molestias aut ducimus qui, mollitia voluptatibus obcaecati
-                                            exercitationem quis veniam pariatur vitae architecto nostrum quia corporis
-                                            odio totam?</p>
+                                        <h3 class="uk-h5 uk-h4@m">S1 Manajemen</h3>
+                                        <p>Menjadi Fakultas Ekonomi dan Bisnis yang berstandar Internasional pada tahun 2023, melalui penelitian dan pengembangan secara kreatif ekosistem kewirausahaan dalam bidang ekonomi dan bisnis berbasis digital.</p>
                                     </div>
                                 </div>
                             </div>
@@ -446,14 +480,11 @@
                                 class="uk-panel uk-card uk-card-small uk-padding-large-horizontal uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
                                 <div class="uk-grid uk-grid-medium@m" data-uk-grid="">
                                     <div class="uk-width-1-3 uk-width-1-4@m">
-                                        <img src="assets/images/icon-01.png" alt="Icon">
+                                        <img src="assets/images/icon/sisteminformasi.png" alt="Icon">
                                     </div>
                                     <div class="uk-panel uk-width-expand">
-                                        <h3 class="uk-h5 uk-h4@m">DemoTestingWeb</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas
-                                            commodi dolores molestias aut ducimus qui, mollitia voluptatibus obcaecati
-                                            exercitationem quis veniam pariatur vitae architecto nostrum quia corporis
-                                            odio totam?</p>
+                                        <h3 class="uk-h5 uk-h4@m">S1 Sistem Informasi</h3>
+                                        <p>Menjadi Program Studi berbasis research and entrepreneurial pada tahun 2023, yang berperan aktif dalam perkembangan keilmuan sistem informasi yang mendukung enterprise dan transformasi digital</p>
                                     </div>
                                 </div>
                             </div>
@@ -491,14 +522,15 @@
                         </div>
                         <div>
                             <div class="uk-panel">
-                                <h4 class="uk-h3 uk-heading-d3@m uk-text-gradient uk-margin-xsmall uk-margin@m">7,000+
+                                <h4 class="uk-h3 uk-heading-d3@m uk-text-gradient uk-margin-xsmall uk-margin@m">
+                                    34052
                                 </h4>
-                                <span>Mahasiswa/i</span>
+                                <span>Mahasiswa</span>
                             </div>
                         </div>
                         <div>
                             <div class="uk-panel">
-                                <h4 class="uk-h3 uk-heading-d3@m uk-text-gradient uk-margin-xsmall uk-margin@m">450+
+                                <h4 class="uk-h3 uk-heading-d3@m uk-text-gradient uk-margin-xsmall uk-margin@m">979
                                 </h4>
                                 <span>Dosen</span>
                             </div>
@@ -659,7 +691,7 @@
                             <div
                                 class="uni-artwork uk-card uk-card-xsmall uk-text-center uk-overflow-hidden uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
                                 <div class="uni-artwork-featured-image uk-panel uk-flex-middle uk-flex-center">
-                                    <div class="uk-panel uk-image-middle"><img src="assets/images/artwork/06.jpg" alt=""
+                                    <div class="uk-panel uk-image-middle"><img src="assets/images/prodi/informatika.png" alt=""
                                             class="uk-radius-small uk-radius-medium@m" loading="lazy"> <a href="#"
                                             class="uk-position-cover" aria-label="Sisfodikpus"></a></div>
                                 </div>
@@ -667,7 +699,7 @@
                                 <div
                                     class="uni-artwork-content uk-panel uk-margin-small-top uk-margin-2xsmall-bottom uk-flex-column uk-flex-middle">
                                     <h2 class="uk-h6 uk-h5@m uk-margin-remove">
-                                        <a class="uk-link-reset" href="#">#sifodikpus</a>
+                                        <a class="uk-link-reset" href="#">Teknik Informatika</a>
                                     </h2>
                                     <span class="uk-text-meta uk-margin-xsmall-top uk-visible@m">Demo</span>
                                 </div>
@@ -677,7 +709,7 @@
                             <div
                                 class="uni-artwork uk-card uk-card-xsmall uk-text-center uk-overflow-hidden uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
                                 <div class="uni-artwork-featured-image uk-panel uk-flex-middle uk-flex-center">
-                                    <div class="uk-panel uk-image-middle"><img src="assets/images/artwork/06.jpg" alt=""
+                                    <div class="uk-panel uk-image-middle"><img src="assets/images/prodi/elektro.png" alt=""
                                             class="uk-radius-small uk-radius-medium@m" loading="lazy"> <a href="#"
                                             class="uk-position-cover" aria-label="Sisfodikpus"></a></div>
                                 </div>
@@ -685,7 +717,7 @@
                                 <div
                                     class="uni-artwork-content uk-panel uk-margin-small-top uk-margin-2xsmall-bottom uk-flex-column uk-flex-middle">
                                     <h2 class="uk-h6 uk-h5@m uk-margin-remove">
-                                        <a class="uk-link-reset" href="#">#sifodikpus</a>
+                                        <a class="uk-link-reset" href="#">Teknik Elektro</a>
                                     </h2>
                                     <span class="uk-text-meta uk-margin-xsmall-top uk-visible@m">Demo</span>
                                 </div>
@@ -695,7 +727,7 @@
                             <div
                                 class="uni-artwork uk-card uk-card-xsmall uk-text-center uk-overflow-hidden uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
                                 <div class="uni-artwork-featured-image uk-panel uk-flex-middle uk-flex-center">
-                                    <div class="uk-panel uk-image-middle"><img src="assets/images/artwork/06.jpg" alt=""
+                                    <div class="uk-panel uk-image-middle"><img src="assets/images/prodi/3.png" alt=""
                                             class="uk-radius-small uk-radius-medium@m" loading="lazy"> <a href="#"
                                             class="uk-position-cover" aria-label="Sisfodikpus"></a></div>
                                 </div>
@@ -703,7 +735,7 @@
                                 <div
                                     class="uni-artwork-content uk-panel uk-margin-small-top uk-margin-2xsmall-bottom uk-flex-column uk-flex-middle">
                                     <h2 class="uk-h6 uk-h5@m uk-margin-remove">
-                                        <a class="uk-link-reset" href="#">#sifodikpus</a>
+                                        <a class="uk-link-reset" href="#">Sistem Informasi</a>
                                     </h2>
                                     <span class="uk-text-meta uk-margin-xsmall-top uk-visible@m">Demo</span>
                                 </div>
@@ -713,7 +745,7 @@
                             <div
                                 class="uni-artwork uk-card uk-card-xsmall uk-text-center uk-overflow-hidden uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
                                 <div class="uni-artwork-featured-image uk-panel uk-flex-middle uk-flex-center">
-                                    <div class="uk-panel uk-image-middle"><img src="assets/images/artwork/06.jpg" alt=""
+                                    <div class="uk-panel uk-image-middle"><img src="assets/images/prodi/4.png" alt=""
                                             class="uk-radius-small uk-radius-medium@m" loading="lazy"> <a href="#"
                                             class="uk-position-cover" aria-label="Sisfodikpus"></a></div>
                                 </div>
@@ -721,7 +753,7 @@
                                 <div
                                     class="uni-artwork-content uk-panel uk-margin-small-top uk-margin-2xsmall-bottom uk-flex-column uk-flex-middle">
                                     <h2 class="uk-h6 uk-h5@m uk-margin-remove">
-                                        <a class="uk-link-reset" href="#">#sifodikpus</a>
+                                        <a class="uk-link-reset" href="#">Teknik Telekomunikasi</a>
                                     </h2>
                                     <span class="uk-text-meta uk-margin-xsmall-top uk-visible@m">Demo</span>
                                 </div>
@@ -731,7 +763,7 @@
                             <div
                                 class="uni-artwork uk-card uk-card-xsmall uk-text-center uk-overflow-hidden uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
                                 <div class="uni-artwork-featured-image uk-panel uk-flex-middle uk-flex-center">
-                                    <div class="uk-panel uk-image-middle"><img src="assets/images/artwork/06.jpg" alt=""
+                                    <div class="uk-panel uk-image-middle"><img src="assets/images/prodi/5.png" alt=""
                                             class="uk-radius-small uk-radius-medium@m" loading="lazy"> <a href="#"
                                             class="uk-position-cover" aria-label="Sisfodikpus"></a></div>
                                 </div>
@@ -739,7 +771,7 @@
                                 <div
                                     class="uni-artwork-content uk-panel uk-margin-small-top uk-margin-2xsmall-bottom uk-flex-column uk-flex-middle">
                                     <h2 class="uk-h6 uk-h5@m uk-margin-remove">
-                                        <a class="uk-link-reset" href="#">#sifodikpus</a>
+                                        <a class="uk-link-reset" href="#">Teknik Sistem Energi</a>
                                     </h2>
                                     <span class="uk-text-meta uk-margin-xsmall-top uk-visible@m">Demo</span>
                                 </div>
@@ -749,7 +781,7 @@
                             <div
                                 class="uni-artwork uk-card uk-card-xsmall uk-text-center uk-overflow-hidden uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
                                 <div class="uni-artwork-featured-image uk-panel uk-flex-middle uk-flex-center">
-                                    <div class="uk-panel uk-image-middle"><img src="assets/images/artwork/06.jpg" alt=""
+                                    <div class="uk-panel uk-image-middle"><img src="assets/images/prodi/6.png" alt=""
                                             class="uk-radius-small uk-radius-medium@m" loading="lazy"> <a href="#"
                                             class="uk-position-cover" aria-label="Sisfodikpus"></a></div>
                                 </div>
@@ -757,7 +789,7 @@
                                 <div
                                     class="uni-artwork-content uk-panel uk-margin-small-top uk-margin-2xsmall-bottom uk-flex-column uk-flex-middle">
                                     <h2 class="uk-h6 uk-h5@m uk-margin-remove">
-                                        <a class="uk-link-reset" href="#">#sifodikpus</a>
+                                        <a class="uk-link-reset" href="#">Teknik Fisika</a>
                                     </h2>
                                     <span class="uk-text-meta uk-margin-xsmall-top uk-visible@m">Demo</span>
                                 </div>
@@ -767,7 +799,7 @@
                             <div
                                 class="uni-artwork uk-card uk-card-xsmall uk-text-center uk-overflow-hidden uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
                                 <div class="uni-artwork-featured-image uk-panel uk-flex-middle uk-flex-center">
-                                    <div class="uk-panel uk-image-middle"><img src="assets/images/artwork/06.jpg" alt=""
+                                    <div class="uk-panel uk-image-middle"><img src="assets/images/prodi/7.png" alt=""
                                             class="uk-radius-small uk-radius-medium@m" loading="lazy"> <a href="#"
                                             class="uk-position-cover" aria-label="Sisfodikpus"></a></div>
                                 </div>
@@ -775,7 +807,7 @@
                                 <div
                                     class="uni-artwork-content uk-panel uk-margin-small-top uk-margin-2xsmall-bottom uk-flex-column uk-flex-middle">
                                     <h2 class="uk-h6 uk-h5@m uk-margin-remove">
-                                        <a class="uk-link-reset" href="#">#sifodikpus</a>
+                                        <a class="uk-link-reset" href="#">Teknik Komputer</a>
                                     </h2>
                                     <span class="uk-text-meta uk-margin-xsmall-top uk-visible@m">Demo</span>
                                 </div>
@@ -785,7 +817,7 @@
                             <div
                                 class="uni-artwork uk-card uk-card-xsmall uk-text-center uk-overflow-hidden uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
                                 <div class="uni-artwork-featured-image uk-panel uk-flex-middle uk-flex-center">
-                                    <div class="uk-panel uk-image-middle"><img src="assets/images/artwork/06.jpg" alt=""
+                                    <div class="uk-panel uk-image-middle"><img src="assets/images/prodi/8.png" alt=""
                                             class="uk-radius-small uk-radius-medium@m" loading="lazy"> <a href="#"
                                             class="uk-position-cover" aria-label="Sisfodikpus"></a></div>
                                 </div>
@@ -793,7 +825,7 @@
                                 <div
                                     class="uni-artwork-content uk-panel uk-margin-small-top uk-margin-2xsmall-bottom uk-flex-column uk-flex-middle">
                                     <h2 class="uk-h6 uk-h5@m uk-margin-remove">
-                                        <a class="uk-link-reset" href="#">#sifodikpus</a>
+                                        <a class="uk-link-reset" href="#">Teknik Biomedis</a>
                                     </h2>
                                     <span class="uk-text-meta uk-margin-xsmall-top uk-visible@m">Demo</span>
                                 </div>
