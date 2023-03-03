@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zxx" class="uk-background-white dark:uk-background-gray-100 dark:uk-text-gray-20 uk-dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisfodikpus</title>
+    <meta name="description" content="NFT Marketplace Template">
+    <meta name="theme-color" content="#741ff5">
+
+    <!-- preload head styles -->
+    <link rel="preload" href="../assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/unicons/Unicons.woff?lkolxg" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@8.3.2/swiper-bundle.min.css" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.15.1/dist/css/uikit.min.css" as="style">
+
+    <!-- <link rel="preload" href="../assets/css/theme/main.min.css" as="style"> -->
+
+    <!-- preload footer scripts -->
+    <link rel="preload" href="../assets/js/uikit.min.js" as="script">
+    <link rel="preload" href="../assets/js/uikit-components.js" as="script">
+    <link rel="preload" href="../assets/js/jquery.min.js" as="script">
+    <link rel="preload" href="../assets/js/swiper-bundle.min.js" as="script">
+    <link rel="preload" href="../assets/js/feather.min.js" as="script">
+    <link rel="preload" href="../assets/js/typed.min.js" as="script">
+    <link rel="preload" href="../assets/js/anime.min.js" as="script">
+    <link rel="preload" href="../assets/js/app.js" as="script">
+    <link rel="preload" href="../assets/js/data-attr-helper.js" as="script">
+    <link rel="preload" href="../assets/js/swiper-helper.js" as="script">
+    <link rel="preload" href="../assets/js/typed-helper.js" as="script">
+    <link rel="preload" href="../assets/js/anime-helper.js" as="script">
+
+    <!-- <link rel="preload" href="../assets/js/anime-helper-defined-timelines.js" as="script"> -->
+
+    <!-- include styles -->
+    <script src="../assets/js/app-head.js"></script>
+    <link rel="stylesheet" href="../assets/css/theme/main.min.css">
+
+    <!-- include scripts -->
+    <script src="../assets/js/uikit.min.js"></script>
+    <script src="../assets/js/uikit-components.js"></script>
+
+    <!-- HIDE MOBILE VIEW -->
+    <style>
+        @media (max-width: 820px) {
+            .hidden-mobile {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="uni-body">
+    <div class="darkmode-trigger uk-position-bottom-right uk-position-small uk-position-fixed uk-box-shadow-large uk-radius-circle"
+        data-darkmode-toggle="">
+        <label class="switch">
+            <span class="sr-only">Dark mode</span>
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <!-- Menu modal -->
+    <div id="uni_mobile_menu" class="uni-mobile-menu uk-offcanvas"
+        data-uk-offcanvas="mode: push; overlay: true; flip: true; selPanel: .uk-offcanvas-bar-panel;">
+        <div class="uk-offcanvas-bar-panel uk-panel dark:uk-background-gray-100">
+            <div class="uni-mobile-menu-wrap uk-flex-column uk-flex-between"
+                data-uk-height-viewport="offset-bottom: true;">
+                <div class="uni-mobile-menu-content">
+                    <header class="uk-card uk-card-2xsmall uk-flex-middle uk-flex-between">
+                        <div class="uk-flex-1">
+                            <button aria-label="Close Menu"
+                                class="uk-offcanvas-close uk-button uk-button-small uk-button-icon uk-button-default uk-button-outline uk-radius-circle"
+                                type="button">
+                                <i class="uk-icon-small" data-feather="arrow-left"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <h5 class="uk-h5 uk-text-uppercase uk-margin-remove">Navigation</h5>
+                        </div>
+                        <div class="uk-flex-1"></div>
+                    </header>
+                    <hr class="uk-margin-remove">
+                    <div class="uk-card uk-card-small">
+                        <div class="uk-panel">
+                            <ul class="uk-nav uk-nav-default">
+                                <li class="uk-nav-header">Beranda</li>
+                                <li><a href="../about/sejarah.html">Sejarah</a></li>
+                                <li><a href="../about/tujuan.html">Tujuan</a></li>
+                                <li><a href="../about/visimisi.html">Visi & Misi</a></li>
+
+                                <li class="uk-nav-header">Informasi Prodi</li>
+                                <li><a href="../profil/informatika.html">S1 Teknik Informatika</a></li>
+                                <li><a href="../profil/tekinformasi.html">S1 Teknologi Informasi</a></li>
+                                <li><a href="../profil/pjjinformatika.html">S1 PJJ Informatika</a></li>
+                                <li><a href="../profil/sainsdata.html">S1 Sains Data</a></li>
+
+                                <li class="uk-nav-header">Fakultas Teknik Elektro</li>
+                                <li><a href="../profil/telekomunikasi.html">S1 Teknik Telekomunikasi</a></li>
+                                <li><a href="../profil/elektro.html">S1 Teknik Elektro</a></li>
+                                <li><a href="../profil/fisika.html">S1 Teknik Fisika</a></li>
+                                <li><a href="../profil/tekkomputer.html">S1 Teknik Komputer</a></li>
+                                <li><a href="../profil/biomedis.html">S1 Teknik Biomedis</a></li>
+                                <li><a href="../profil/sisenergi.html">S1 Teknik Sistem Energi</a></li>
+
+                                <li class="uk-nav-header">Fakultas Ekonomi Dan Bisnis</li>
+
+                                <li><a href="../profil/manajemen.html">S1 Manajemen</a></li>
+                                <li><a href="../profil/akuntansi.html">S1 Akuntansi</a></li>
+
+                                <li class="uk-nav-header">Fakultas Rekayasa Industri</li>
+
+                                <li><a href="../profil/sisinformasi.html">S1 Sistem Informasi</a></li>
+
+                                <li class="uk-nav-header">Content &amp; Privacy</li>
+                                <li><a href="terms.html">Terms of use</a></li>
+                                <li><a href="privact.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wrapper start -->
+    <div class="wrap">
+        <header class="uni-header uk-position-top">
+            <div class="uni-header-navbar"
+                data-uk-sticky="top: 70; show-on-up: false; animation: uk-animation-slide-top"
+                data-anime="opacity:[0, 1]; translateY:[-24, 0]; onview: true; delay: 0;">
+                <div class="uk-container">
+                    <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                        <div class="uk-navbar-top">
+                            <div class="uk-navbar-left">
+                                <a class="uk-logo uk-navbar-item uk-h4 uk-h3@m uk-margin-remove" href="../index.html">
+                                    <img class="uk-visible dark:uk-hidden" width="120" src="../assets/images/logo.svg"
+                                        alt="Sisfodikpus" loading="lazy"> <img class="uk-hidden dark:uk-visible"
+                                        width="120" src="../assets/images/logo.svg" alt="Sisfodikpus" loading="lazy">
+                                </a>
+                            </div>
+
+                            <div class="uk-navbar-right uk-flex-1 uk-flex-right">
+                                <div class="uk-inline hidden-mobile">
+                                    <a href="../index.html" class="uk-button uk-button-default">Beranda</a>
+                                </div>
+
+                                <div class="hidden-mobile">
+                                    <button class="uk-button uk-button-default" type="button">Tentang</button>
+                                    <div uk-dropdown>
+                                        <ul class="uk-nav uk-dropdown-nav">
+                                            <li class="uk-nav-header">Info Sisfodikpus</li>
+                                            <li><a href="../about/sejarah.html">Sejarah</a></li>
+                                            <li><a href="../about/tujuan.html">Tujuan</a></li>
+                                            <li><a href="../about/visimisi.html">Visi & Misi</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="hidden-mobile">
+                                    <button class="uk-button uk-button-default" type="button">Akademik</button>
+                                    <div class="uk-width-large" uk-dropdown>
+                                        <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>
+                                            <div>
+                                                <ul class="uk-nav uk-dropdown-nav">
+
+                                                    <li class="uk-nav-header">Fakultas Informatika</li>
+
+                                                    <li><a href="../profil/informatika.html">S1 Teknik Informatika</a>
+                                                    </li>
+                                                    <li><a href="../profil/tekinformasi.html">S1 Teknologi Informasi</a>
+                                                    </li>
+                                                    <li><a href="../profil/pjjinformatika.html">S1 PJJ Informatika</a>
+                                                    </li>
+                                                    <li><a href="../profil/sainsdata.html">S1 Sains Data</a></li>
+
+                                                    <li class="uk-nav-header">Fakultas Teknik Elektro</li>
+
+                                                    <li><a href="../profil/telekomunikasi.html">S1 Teknik
+                                                            Telekomunikasi</a></li>
+                                                    <li><a href="../profil/elektro.html">S1 Teknik Elektro</a></li>
+                                                    <li><a href="../profil/fisika.html">S1 Teknik Fisika</a></li>
+                                                    <li><a href="../profil/tekkomputer.html">S1 Teknik Komputer</a></li>
+                                                    <li><a href="../profil/biomedis.html">S1 Teknik Biomedis</a></li>
+                                                    <li><a href="../profil/sisenergi.html">S1 Teknik Sistem Energi</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-dropdown-nav">
+                                                    <li class="uk-nav-header">Fakultas Ekonomi Dan Bisnis</li>
+
+                                                    <li><a href="../profil/manajemen.html">S1 Manajemen</a></li>
+                                                    <li><a href="../profil/akuntansi.html">S1 Akuntansi</a></li>
+
+                                                    <li class="uk-nav-header">Fakultas Rekayasa Industri</li>
+
+                                                    <li><a href="../profil/sisinformasi.html">S1 Sistem Informasi</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hidden-mobile">
+                                    <button class="uk-button uk-button-default" type="button">Kampus</button>
+                                    <div uk-dropdown>
+                                        <ul class="uk-nav uk-dropdown-nav">
+                                            <li class="uk-nav-header">Kehidupan Kampus</li>
+                                            <li><a href="#">Kehidupan Di Bandung</a></li>
+                                            <li><a href="#">Fasilitas Unggulan</a></li>
+                                            <li><a href="#">Fasilitas Disabilitas</a></li>
+                                            <li><a href="#">Unit Kegiatan Mahasiswa</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="uk-navbar-item">
+                                    <ul class="uk-subnav uk-subnav-small uk-visible@m">
+                                        <li>
+                                            <a href="#"><i class="uk-icon uk-icon-medium unicon-logo-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="uk-icon uk-icon-medium unicon-logo-twitter"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="uk-navbar-item uk-hidden@m">
+                                    <a href="#uni_mobile_menu" data-uk-toggle>
+                                        <span class="uk-icon uk-icon-medium material-icons">menu</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- about start -->
+        <div id="uni_about" class="uni-about uk-section uk-section-xlarge@m uk-panel">
+            <div class="uk-container">
+                <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-grid" data-uk-grid
+                    data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
+                    <div class="uk-panel uk-text-center">
+                        <br>
+                        <h2 class="uk-h3 uk-h1@m">Fasilitas Disabilitas</h2>
+                    </div>
+                </header>
+                <div class="uk-panel uk-margin-medium-top uk-margin-2xlarge-top@m">
+                    <div class="uk-grid uk-grid-2xlarge uk-grid-3xlarge@m uk-child-width-1-1" data-uk-grid="">
+                        <!-- KONTEN -->
+                        <div>
+                            <div class="uk-panel">
+                                <div class="uk-flex-first@m">
+                                    <div class="uk-panel"
+                                        data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 400;">
+                                        <p class="uk-text-large@m">Telkom University menyediakan fasilitas bagi
+                                            mahasiswa penyandang disabilitas baik berupa dukungan fasilitas yang
+                                            disediakan ataupun berupa materi pembelajaran yang dapat membantu penyandang
+                                            disabilitas. Hal ini sesuai dengan Undang-Undang Republik Indonesia Nomor 8
+                                            Tahun 2016 tentang Penyandang Disabilitas disahkan oleh Presiden Joko Widodo
+                                            bahwa Penyandang Disabilitas adalah setiap orang yang mengalami keterbatasan
+                                            fisik, intelektual, mental, dan/atau sensorik dalam jangka waktu lama yang
+                                            dalam berinteraksi dengan lingkungan dapat mengalami hambatan dan kesulitan
+                                            untuk berpartisipasi secara penuh dan efektif dengan warga negara lainnya
+                                            berdasarkan kesamaan hak.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel">
+                                <div class="uk-grid uk-grid-3xlarge@m uk-flex-middle uk-child-width-1-2@m"
+                                    data-uk-grid="">
+                                    <div>
+                                        <div class="uk-panel uk-image-middle uk-overflow-hidden uk-radius uk-radius-large@m"
+                                            data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;">
+                                            <img src="../assets/images/bandung/fasilitasd.png" alt="Sisfodikpus">
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex-first@m">
+                                        <div class="uk-panel"
+                                            data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 400;">
+                                            <span class="uk-text-overline uk-text-gradient">Sisfodikpus</span>
+                                            <h3 class="uk-h3 uk-h1@m">Buddy</h3>
+                                            <p class="uk-text-large@m">Telkom University memiliki komunitas relawan
+                                                peduli tuna rungu, yang disebut dengan “buddy”. Berasal dari para
+                                                mahasiswa yang bertugas sebagai note-taker selama perkuliahan.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel">
+                                <div class="uk-grid uk-grid-3xlarge@m uk-flex-middle uk-child-width-1-2@m"
+                                    data-uk-grid="">
+                                    <div>
+                                        <div class="uk-panel uk-image-middle uk-overflow-hidden uk-radius uk-radius-large@m"
+                                            data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;">
+                                            <img src="../assets/images/bandung/fasilitasd.png" alt="Sisfodikpus">
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex-first@m">
+                                        <div class="uk-panel"
+                                            data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 400;">
+                                            <span class="uk-text-overline uk-text-gradient">Sisfodikpus</span>
+                                            <h3 class="uk-h3 uk-h1@m">Layanan Konseling</h3>
+                                            <p class="uk-text-large@m">Telkom University peduli terhadap kondisi fisik
+                                                dan mental dari mahasiswa. Mahasiswa yang ingin berkonsultasi dengan
+                                                Psikolog mengenai kondisi mereka dapat mendaftar melalui i-Gracias</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel">
+                                <div class="uk-grid uk-grid-3xlarge@m uk-flex-middle uk-child-width-1-2@m"
+                                    data-uk-grid="">
+                                    <div>
+                                        <div class="uk-panel uk-image-middle uk-overflow-hidden uk-radius uk-radius-large@m"
+                                            data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;">
+                                            <img src="../assets/images/bandung/fasilitasd.png" alt="Sisfodikpus">
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex-first@m">
+                                        <div class="uk-panel"
+                                            data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 400;">
+                                            <span class="uk-text-overline uk-text-gradient">Sisfodikpus</span>
+                                            <h3 class="uk-h3 uk-h1@m">Friendly User Interface</h3>
+                                            <p class="uk-text-large@m">Layanan Aplikasi di Telkom University telah
+                                                dirancang dengan baik untuk mahasiswa dengan kondisi buta warna.
+                                                Sebagian besar gambar masih dapat dilihat oleh mahasiswa dengan kondisi
+                                                buta warna sehingga informasi yang disampaikan pada aplikasi masih dapat
+                                                diterima dengan baik.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel">
+                                <div class="uk-grid uk-grid-3xlarge@m uk-flex-middle uk-child-width-1-2@m"
+                                    data-uk-grid="">
+                                    <div>
+                                        <div class="uk-panel uk-image-middle uk-overflow-hidden uk-radius uk-radius-large@m"
+                                            data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;">
+                                            <img src="../assets/images/bandung/fasilitasd.png" alt="Sisfodikpus">
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex-first@m">
+                                        <div class="uk-panel"
+                                            data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 400;">
+                                            <span class="uk-text-overline uk-text-gradient">Sisfodikpus</span>
+                                            <h3 class="uk-h3 uk-h1@m">Sistem Pembelajaran</h3>
+                                            <p class="uk-text-large@m">Tidak hanya menyediakan fasilitas fisik, Telkom
+                                                University telah mengembangkan desain kurikulum inklusif untuk beberapa
+                                                mata pelajaran dengan menyediakan materi video yang didukung oleh teks
+                                                terjemahan.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel">
+                                <div class="uk-grid uk-grid-3xlarge@m uk-flex-middle uk-child-width-1-2@m"
+                                    data-uk-grid="">
+                                    <div>
+                                        <div class="uk-panel uk-image-middle uk-overflow-hidden uk-radius uk-radius-large@m"
+                                            data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;">
+                                            <img src="../assets/images/bandung/fasilitasd.png" alt="Sisfodikpus">
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex-first@m">
+                                        <div class="uk-panel"
+                                            data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 400;">
+                                            <span class="uk-text-overline uk-text-gradient">Sisfodikpus</span>
+                                            <h3 class="uk-h3 uk-h1@m">Peta Akses Disabilitas</h3>
+                                            <p class="uk-text-large@m">Telkom University mendukung fasilitas bagi
+                                                Disabilitas. Dari peta akses dapat diidentifikasi fasilitas akses jalan
+                                                kursi roda, toilet dan tempat parkir khusus disabilitas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wrapper end -->
+
+        <!-- Footer start -->
+        <footer class="uni-footer uk-section uk-section-xlarge@m">
+            <div class="uk-container">
+                <div class="uk-panel">
+                    <img class="uk-position-top-left" width="32" src="../assets/images/objects/ethereum-01.png"
+                        alt="object" style="top: 32%; left: 16%">
+                    <img class="uk-position-top-right" width="16" src="../assets/images/objects/x.png" alt="object"
+                        style="top: 8%; right: 16%">
+                    <img class="uk-position-bottom-right" width="16" src="../assets/images/objects/circle-01.png"
+                        alt="object" style="bottom: 24%; right: 40%">
+                    <img class="uk-position-bottom-left" width="24" src="../assets/images/objects/circle-03.png"
+                        alt="object" style="bottom: -8%; left: 30%">
+                    <div class="uk-grid uk-flex-center uk-text-center" data-uk-grid>
+                        <div class="uk-width-large@m">
+                            <div class="uk-panel">
+                                <a href="../index.html" class="uk-logo">
+                                    <img width="200" src="../assets/images/logo.svg" alt="Sisfodikpus">
+                                </a>
+                                <p class="uk-text-xlarge@m uk-margin-medium-top@m">Jelajahi informasi tentang program
+                                    studi
+                                    dan kampus kami. Daftar sekarang untuk mendapatkan akses fitur yang menarik serta
+                                    informasi yang terbaru. #SistemInformasiDigital</p>
+                                <ul
+                                    class="uk-subnav uk-subnav-small uk-flex-center uk-text-gray-40 uk-margin-top uk-margin-medium-top@m">
+                                    <li>
+                                        <a href="#"><span
+                                                class="uk-icon uk-icon-medium@m unicon-logo-twitter"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span
+                                                class="uk-icon uk-icon-medium@m unicon-logo-instagram"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="uk-margin-medium uk-margin-3xlarge-top@m">
+                    <div class="uk-panel uk-text-small">
+                        <div class="uk-grid uk-child-width-auto@m uk-flex-center uk-flex-between@m uk-text-center uk-text-left@m"
+                            data-uk-grid>
+                            <div>
+                                <ul class="uk-subnav uk-subnav-small uk-text-muted uk-flex-center">
+                                    <li><a href="privacy.html">Privacy policy</a></li>
+                                    <li><a href="terms.html">Terms of use</a></li>
+                                    <li class="uk-margin-small-left">
+                                        <a href="#" data-uk-totop="" data-uk-scroll><i
+                                                class="uk-icon uk-icon-small unicon-chevron-up"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="uk-flex-first@m uk-flex-center">
+                                <p class="uk-text-muted">©2023 Sisfodikpus. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer end -->
+
+        <!-- include scripts -->
+        <script defer src="../assets/js/jquery.min.js"></script>
+        <script defer src="../assets/js/swiper-bundle.min.js"></script>
+        <script defer src="../assets/js/feather.min.js"></script>
+        <script defer src="../assets/js/typed.min.js"></script>
+        <script defer src="../assets/js/anime.min.js"></script>
+        <script defer src="../assets/js/app.js"></script>
+        <script defer src="../assets/js/data-attr-helper.js"></script>
+        <script defer src="../assets/js/swiper-helper.js"></script>
+        <script defer src="../assets/js/typed-helper.js"></script>
+        <script defer src="../assets/js/anime-helper.js"></script>
+
+        <!-- <script defer src="../assets/js/anime-helper-defined-timelines.js"></script> -->
+        <script>
+            // Schema toggle via URL
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const getSchema = urlParams.get("schema");
+            if (getSchema === "dark") {
+                document.documentElement.classList.add("uk-dark");
+                localStorage.setItem("darkMode", "1");
+            } else if (getSchema === "light") {
+                document.documentElement.classList.remove("uk-dark");
+                localStorage.setItem("darkMode", "0");
+            }
+        </script>
+</body>
+
+</html>
