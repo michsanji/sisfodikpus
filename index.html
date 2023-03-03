@@ -39,6 +39,15 @@
     <!-- include scripts -->
     <script src="assets/js/uikit.min.js"></script>
     <script src="assets/js/uikit-components.js"></script>
+
+    <!-- NAV DROPDOWN -->
+    <style>
+        @media (max-width: 767px) {
+            .hidden-mobile {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body class="uni-body">
@@ -178,65 +187,78 @@
                             </div>
 
                             <div class="uk-navbar-right uk-flex-1 uk-flex-right">
-                                <ul class="uk-navbar-nav dark:uk-text-gray-10 uk-visible@m"
-                                    data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80" data-uk-navbar-bound>
-                                    <li><a href="#">Beranda</a></li>
-                                </ul>
-                                <div class="uk-inline">
-                                    <button class="uk-button uk-button-default" type="button">Tentang Kami</button>
-                                    <div class="uk-dropdown-large" uk-dropdown>
+                                <div class="uk-inline hidden-mobile">
+                                    <a href="index.html" class="uk-button uk-button-default">Beranda</a>
+                                </div>
+
+                                <div class="hidden-mobile">
+                                    <button class="uk-button uk-button-default" type="button">Tentang</button>
+                                    <div uk-dropdown>
                                         <ul class="uk-nav uk-dropdown-nav">
-                                            <li class="uk-nav-header">Info Sisfodikpus</li>
+                                            <li class="uk-nav-header">Info Sisfodikpus/li>
                                             <li><a href="#">Sejarah</a></li>
                                             <li><a href="#">Tujuan</a></li>
                                             <li><a href="#">Visi & Misi</a></li>
                                         </ul>
                                     </div>
                                 </div>
-                                <button class="uk-button uk-button-default" type="button">Fakultas Teknik</button>
-                                <div class="uk-width-large" uk-dropdown>
-                                    <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>
-                                        <div>
-                                            <ul class="uk-nav uk-dropdown-nav">
-                                                <li class="uk-nav-header">Fakultas Informatika</li>
-                                                <li><a href="#">S1 Teknik Informatika</a></li>
-                                                <li><a href="#">S1 Teknologi Informasi</a></li>
-                                                <li><a href="#">S1 Rekayasa Perangkat Lunak</a></li>
-                                                <li class="uk-nav-header">Fakultas Elektro</li>
-                                                <li><a href="#">S1 Teknik Telekomunikasi</a></li>
-                                                <li><a href="#">S1 Teknik Elektro</a></li>
-                                                <li><a href="#">S1 Teknik Fisika</a></li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <ul class="uk-nav uk-dropdown-nav">
-                                                <li class="uk-nav-header">Fakultas Teknik Elektro</li>
-                                                <li><a href="#">S1 Teknik Informatika</a></li>
-                                                <li><a href="#">S1 Teknologi Informasi</a></li>
-                                                <li><a href="#">S1 Rekayasa Perangkat Lunak</a></li>
-                                                <li class="uk-nav-header">Fakultas Teknik Elektro</li>
-                                                <li><a href="#">S1 Teknik Telekomunikasi</a></li>
-                                                <li><a href="#">S1 Teknik Elektro</a></li>
-                                                <li><a href="#">S1 Teknik Fisika</a></li>
-                                            </ul>
+
+                                <div class="hidden-mobile">
+                                    <button class="uk-button uk-button-default" type="button">Akademik</button>
+                                    <div class="uk-width-large" uk-dropdown>
+                                        <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>
+                                            <div>
+                                                <ul class="uk-nav uk-dropdown-nav">
+
+                                                    <li class="uk-nav-header">Fakultas Informatika</li>
+                                                    
+                                                    <li><a href="#">S1 Teknik Informatika</a></li>
+                                                    <li><a href="#">S1 Teknologi Informasi</a></li>
+                                                    <li><a href="#">S1 PJJ Informatika</a></li>
+                                                    <li><a href="#">S1 Sains Data</a></li>
+
+                                                    <li class="uk-nav-header">Fakultas Teknik Elektro</li>
+
+                                                    <li><a href="#">S1 Teknik Telekomunikasi</a></li>
+                                                    <li><a href="#">S1 Teknik Elektro</a></li>
+                                                    <li><a href="#">S1 Teknik Fisika</a></li>
+                                                    <li><a href="#">S1 Teknik Komputer</a></li>
+                                                    <li><a href="#">S1 Teknik Biomedis</a></li>
+                                                    <li><a href="#">S1 Teknik Sistem Energi</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-dropdown-nav">
+                                                    <li class="uk-nav-header">Fakultas Ekonomi Dan Bisnis</li>
+
+                                                    <li><a href="#">S1 Manajemen</a></li>
+                                                    <li><a href="#">S1 Akuntansi</a></li>
+
+
+                                                    <li class="uk-nav-header">Fakultas Komunikasi Dan Bisnis</li>
+
+                                                    <li><a href="#">S1 Administrasi Bisnis</a></li>
+                                                    <li><a href="#">S1 Ilmu Komunikasi</a></li>
+                                                    <li><a href="#">S1 Hubungan Masyarakat Digital</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="uk-inline">
-                                    <button class="uk-button uk-button-default" type="button">Fakultas Terapan</button>
-                                    <div class="uk-dropdown-large" uk-dropdown>
+
+                                <div class="hidden-mobile">
+                                    <button class="uk-button uk-button-default" type="button">Kampus</button>
+                                    <div uk-dropdown>
                                         <ul class="uk-nav uk-dropdown-nav">
-                                            <li class="uk-nav-header">Fakultas Informatika</li>
-                                            <li><a href="#">S1 Teknik Informatika</a></li>
-                                            <li><a href="#">S1 Teknologi Informasi</a></li>
-                                            <li><a href="#">S1 Rekayasa Perangkat Lunak</a></li>
-                                            <li class="uk-nav-header">Fakultas Elektro</li>
-                                            <li><a href="#">S1 Teknik Telekomunikasi</a></li>
-                                            <li><a href="#">S1 Teknik Elektro</a></li>
-                                            <li><a href="#">S1 Teknik Fisika</a></li>
+                                            <li class="uk-nav-header">Kehidupan Kampus</li>
+                                            <li><a href="#">Kehidupan Di Bandung</a></li>
+                                            <li><a href="#">Fasilitas Unggulan</a></li>
+                                            <li><a href="#">Fasilitas Disabilitas</a></li>
+                                            <li><a href="#">Unit Kegiatan Mahasiswa</a></li>
                                         </ul>
                                     </div>
                                 </div>
+
                                 <div class="uk-navbar-item">
                                     <ul class="uk-subnav uk-subnav-small uk-visible@m">
                                         <li>
@@ -249,11 +271,6 @@
                                 </div>
 
                                 <div class="uk-navbar-item uk-hidden@m">
-                                    <a href="#uni_connect_wallet"
-                                        class="uk-button uk-button-medium@m uk-button-icon uk-hidden@m uk-margin-small-right"
-                                        data-uk-toggle="">
-                                        <i class="uk-icon unicon-wallet"></i>
-                                    </a>
                                     <a href="#uni_mobile_menu" data-uk-toggle>
                                         <span class="uk-icon uk-icon-medium material-icons">menu</span>
                                     </a>
@@ -303,7 +320,8 @@
                                         data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 440;">
                                     <h2 class="uk-h2 uk-d3@m uk-margin-small uk-margin@m">Sistem Informasi
                                         Prodi Kampus</h2>
-                                    <p class="uk-text-xlarge uk-width-xlarge@m uk-text-muted">Memperkenalkan fakultas pada mahasiswa atau calon mahasiswa baru.</p>
+                                    <p class="uk-text-xlarge uk-width-xlarge@m uk-text-muted">Memperkenalkan fakultas
+                                        pada mahasiswa atau calon mahasiswa baru.</p>
                                     <a href="#uni_about"
                                         class="uk-button uk-button-medium@m uk-button-gradient uk-margin-small-top">
                                         <span>Sekilas Tentang Sisfodikpus</span>
@@ -442,7 +460,9 @@
                                     </div>
                                     <div class="uk-panel uk-width-expand">
                                         <h3 class="uk-h5 uk-h4@m">S1 Teknik Informatika</h3>
-                                        <p>Menuju program studi sarjana yang bereputasi nasional dan internasional dalam pendidikan, penelitian, dan pengabdian masyarakat yang inovatif di bidang Informatika, khususnya sistem cerdas</p>
+                                        <p>Menuju program studi sarjana yang bereputasi nasional dan internasional dalam
+                                            pendidikan, penelitian, dan pengabdian masyarakat yang inovatif di bidang
+                                            Informatika, khususnya sistem cerdas</p>
                                     </div>
                                 </div>
                             </div>
@@ -456,7 +476,9 @@
                                     </div>
                                     <div class="uk-panel uk-width-expand">
                                         <h3 class="uk-h5 uk-h4@m">S1 Teknik Elektro</h3>
-                                        <p>Menjadi program studi berstandar internasional yang berperan aktif dalam pengembangan pendidikan, riset, dan kewirausahaan serta menghasilkan sarjana di bidang Sistem Elektronika, Sistem Kendali, atau Sistem Tertanam</p>
+                                        <p>Menjadi program studi berstandar internasional yang berperan aktif dalam
+                                            pengembangan pendidikan, riset, dan kewirausahaan serta menghasilkan sarjana
+                                            di bidang Sistem Elektronika, Sistem Kendali, atau Sistem Tertanam</p>
                                     </div>
                                 </div>
                             </div>
@@ -470,7 +492,9 @@
                                     </div>
                                     <div class="uk-panel uk-width-expand">
                                         <h3 class="uk-h5 uk-h4@m">S1 Manajemen</h3>
-                                        <p>Menjadi Fakultas Ekonomi dan Bisnis yang berstandar Internasional pada tahun 2023, melalui penelitian dan pengembangan secara kreatif ekosistem kewirausahaan dalam bidang ekonomi dan bisnis berbasis digital.</p>
+                                        <p>Menjadi Fakultas Ekonomi dan Bisnis yang berstandar Internasional pada tahun
+                                            2023, melalui penelitian dan pengembangan secara kreatif ekosistem
+                                            kewirausahaan dalam bidang ekonomi dan bisnis berbasis digital.</p>
                                     </div>
                                 </div>
                             </div>
@@ -484,7 +508,9 @@
                                     </div>
                                     <div class="uk-panel uk-width-expand">
                                         <h3 class="uk-h5 uk-h4@m">S1 Sistem Informasi</h3>
-                                        <p>Menjadi Program Studi berbasis research and entrepreneurial pada tahun 2023, yang berperan aktif dalam perkembangan keilmuan sistem informasi yang mendukung enterprise dan transformasi digital</p>
+                                        <p>Menjadi Program Studi berbasis research and entrepreneurial pada tahun 2023,
+                                            yang berperan aktif dalam perkembangan keilmuan sistem informasi yang
+                                            mendukung enterprise dan transformasi digital</p>
                                     </div>
                                 </div>
                             </div>
@@ -691,9 +717,9 @@
                             <div
                                 class="uni-artwork uk-card uk-card-xsmall uk-text-center uk-overflow-hidden uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
                                 <div class="uni-artwork-featured-image uk-panel uk-flex-middle uk-flex-center">
-                                    <div class="uk-panel uk-image-middle"><img src="assets/images/prodi/informatika.png" alt=""
-                                            class="uk-radius-small uk-radius-medium@m" loading="lazy"> <a href="#"
-                                            class="uk-position-cover" aria-label="Sisfodikpus"></a></div>
+                                    <div class="uk-panel uk-image-middle"><img src="assets/images/prodi/informatika.png"
+                                            alt="" class="uk-radius-small uk-radius-medium@m" loading="lazy"> <a
+                                            href="#" class="uk-position-cover" aria-label="Sisfodikpus"></a></div>
                                 </div>
 
                                 <div
@@ -709,9 +735,9 @@
                             <div
                                 class="uni-artwork uk-card uk-card-xsmall uk-text-center uk-overflow-hidden uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
                                 <div class="uni-artwork-featured-image uk-panel uk-flex-middle uk-flex-center">
-                                    <div class="uk-panel uk-image-middle"><img src="assets/images/prodi/elektro.png" alt=""
-                                            class="uk-radius-small uk-radius-medium@m" loading="lazy"> <a href="#"
-                                            class="uk-position-cover" aria-label="Sisfodikpus"></a></div>
+                                    <div class="uk-panel uk-image-middle"><img src="assets/images/prodi/elektro.png"
+                                            alt="" class="uk-radius-small uk-radius-medium@m" loading="lazy"> <a
+                                            href="#" class="uk-position-cover" aria-label="Sisfodikpus"></a></div>
                                 </div>
 
                                 <div
