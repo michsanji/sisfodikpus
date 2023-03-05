@@ -50,7 +50,7 @@
     </style>
 </head>
 
-<body class="uni-body">
+<body class="uni-body" oncopy="return false" oncut="return false" onpaste="return false">
     <div class="darkmode-trigger uk-position-bottom-right uk-position-small uk-position-fixed uk-box-shadow-large uk-radius-circle"
         data-darkmode-toggle="">
         <label class="switch">
@@ -1415,6 +1415,25 @@
 
     <!-- DISINI NAMBAH WAKTU -->
     <!-- Footer end -->
+
+    <!-- ANIMASI TITLE WEB -->
+    <script>
+        let webTitle = document.title;
+        window.addEventListener("blur", () => {
+            document.title = "Come Back :(";
+        });
+
+        window.addEventListener("focus", () => {
+            document.title = webTitle;
+        });
+    </script>
+
+    <!-- MELARANG KLIK KANAN -->
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+    </script>
 
     <!-- include scripts -->
     <script defer src="assets/js/jquery.min.js"></script>
